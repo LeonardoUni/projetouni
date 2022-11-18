@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cobrança</title>
+    <script type="text/javascript" src="jquery-3.6.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: 0px;
+        font-family: "Poppins", sans-serif;
+
+    }
+
+    :root {
+        --select-border: rgb(0, 0, 0);
+        --select-focus: rgb(68, 128, 218);
+        --select-arrow: var(--select-border);
+    }
+
+    .container {
+        background: linear-gradient(45deg, #0F6684, #172A3A);
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 20px;
+        justify-content: center;
+        display: flexbox;
+        font-size: 30pt;
+        font-weight: bold;
+    }
+
+    .container2 {
+        text-align: center;
+        padding: 20px;
+    }
+
+    select {
+        width: 300px;
+        min-width: 15ch;
+        max-width: 30ch;
+        border: 1px solid var(--select-border);
+        border-radius: 0.25em;
+        padding: 0.25em 0.5em;
+        font-size: 1.25rem;
+        cursor: pointer;
+        line-height: 1.1;
+        background-color: rgb(255, 255, 255);
+    }
+
+    select:-ms-expand {
+        display: none;
+    }
+
+    .select::after {
+        content: "";
+        width: 0.8em;
+        height: 0.5em;
+        background-color: var(--select-arrow);
+        clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+    }
+
+    .texto {
+        display: none;
+    }
+
+    .texto .cbr1 {
+        float: left;
+        padding: 10px;
+        margin-top: 20px;
+        margin-left: 20px;
+        width: 400px;
+        height: 335px;
+        margin-bottom: 20px;
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 3px;
+        padding: 10px;
+        line-height: 35px;
+        background: rgb(0, 0, 68);
+        color: white;
+    }
+
+    .texto .cbr1:hover {
+        background-color: white;
+        color: black;
+        box-shadow: 2px 10px 15px black;
+        transition: 0.5s;
+        text-anchor: black;
+        cursor: pointer;
+    }
+
+    .texto .reat1 {
+        float: left;
+        padding: 10px;
+        margin-top: 20px;
+        margin-left: 20px;
+        width: 400px;
+        height: 335px;
+        margin-bottom: 20px;
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 3px;
+        padding: 10px;
+        line-height: 35px;
+        background: rgb(0, 0, 68);
+        color: white;
+    }
+
+    .texto .reat1:hover {
+        background-color: white;
+        color: black;
+        box-shadow: 2px 10px 15px black;
+        transition: 0.5s;
+        text-anchor: black;
+        cursor: pointer;
+    }
+</style>
+
+<header>
+    <div class="container">
+        <p id="titulo">Cobrança / Reativação</p>
+    </div>
+</header>
+
+<body>
+    <div class="container2">
+        <select id="myselection">
+            <div class="select-items">
+                <option>Selecione um Departamento</option>
+                <option value="1">Cobrança</option>
+                <option value="2">Reativação</option>
+            </div>
+        </select>
+    </div>
+
+    <div id="show1" class="texto">
+        <div class="cbr1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> MÉTRICAS DE COBRANÇA NO BITRIX</p>
+            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 1 </p>
+            <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/35/tasks/task/view/21453/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: EM ANDAMENTO </p>
+            <p> <b>ESTRATÉGICO</b>: SIM </p>
+        </div>
+
+
+        <div class="cbr1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> MELHORIAS 2ª VIA DE BOLETO PELO
+                NEWCON - ENVIO AUTOMÁTICO</p>
+            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
+            <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/35/tasks/task/view/21547/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: EM ANDAMENTO </p>
+            <p> <b>ESTRATÉGICO</b>: NÃO </p>
+        </div>
+
+        <div class="cbr1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> BAIXA AUTOMÁTICA DE PAGAMENTOS NO
+                BITRIX</p>
+            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
+            <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/35/tasks/task/view/21627/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: EM ANDAMENTO </p>
+            <p> <b>ESTRATÉGICO</b>: SIM </p>
+        </div>
+
+        <div class="cbr1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> RETORNO SMS POR CONSORCIADOS -
+                INTEGRAR PLATAFORMA MESSAGE CENTER AO WHATSAPP/MOVIDESK</p>
+            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
+            <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora" href="https://consorciounifisa.bitrix24.com.br/company/personal/user/35/tasks/task/view/21579/
+                    ">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: EM ANDAMENTO </p>
+            <p> <b>ESTRATÉGICO</b>: NÃO </p>
+        </div>
+
+        <div class="cbr1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> TREINAMENTO COBRANÇA / REATIVAÇÃO
+            </p>
+            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
+            <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora" href="https://consorciounifisa.bitrix24.com.br/company/personal/user/35/tasks/task/view/21579/
+                    ">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: EM ANDAMENTO </p>
+            <p> <b>ESTRATÉGICO</b>: NÃO </p>
+        </div>
+
+        <div class="cbr1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> ABONO DE MULTAS / JUROS</p>
+            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 1 </p>
+            <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora" href="https://consorciounifisa.bitrix24.com.br/company/personal/user/35/tasks/task/view/21607/
+                    ">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: EM ANDAMENTO </p>
+            <p> <b>ESTRATÉGICO</b>: NÃO </p>
+        </div>
+
+        <div class="cbr1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> PROCESSOS AUTOMATIZADOS NEWCON</p>
+            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 1 </p>
+            <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/35/tasks/task/view/21565/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: SOMENTE CADASTRADA </p>
+            <p> <b>ESTRATÉGICO</b>: SIM </p>
+        </div>
+    </div>
+
+    <div id="show2" class="texto">
+        <div class="reat1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> MÉTRICAS DE REATIVAÇÃO NO BITRIX</p>
+            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
+            <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/35/tasks/task/view/21719/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: EM ANDAMENTO </p>
+            <p> <b>ESTRATÉGICO</b>: SIM </p>
+        </div>
+
+        <div class="reat1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> CAMPANHAS ESPECIAIS REATIVAÇÃO </p>
+            <p> <b>PRAZO ESTIMADO</b>: T1 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 3 </p>
+            <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/35/tasks/task/view/21717/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: PAUSADA </p>
+            <p> <b>ESTRATÉGICO</b>: NÃO </p>
+        </div>
+
+        <div class="reat1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> RECUPERAÇÃO DE CLIENTE DESISTENTE
+            </p>
+            <p> <b>PRAZO ESTIMADO</b>: T1 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 3 </p>
+            <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/35/tasks/task/view/21711/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: PAUSADA </p>
+            <p> <b>ESTRATÉGICO</b>: NÃO </p>
+        </div>
+
+        <div class="reat1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> REATIVAR NO PRAZO DO GRUPO E NÃO DA
+                COTA</p>
+            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 1 </p>
+            <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/35/tasks/task/view/21707/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: SOMENTE CADASTRADA </p>
+            <p> <b>ESTRATÉGICO</b>: NÃO </p>
+        </div>
+
+        <div class="reat1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> PAGAMENTO VIA PIX - REATIVAÇÃO</p>
+            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
+            <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/35/tasks/task/view/21703/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: EM ANDAMENTO </p>
+            <p> <b>ESTRATÉGICO</b>: NÃO </p>
+        </div>
+
+        <div class="reat1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> COTAS PAGAS E NÃO REATIVADAS NO
+                NEWCON</p>
+            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
+            <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/35/tasks/task/view/21671/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: EM ANDAMENTO </p>
+            <p> <b>ESTRATÉGICO</b>: NÃO </p>
+        </div>
+
+        <div class="reat1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;"> TREINAMENTO COBRANÇA / REATIVAÇÃO
+            </p>
+            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
+            <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/35/tasks/task/view/21637/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: EM ANDAMENTO </p>
+            <p> <b>ESTRATÉGICO</b>: NÃO </p>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('#myselection').on('change', function () {
+                var demovalue = $(this).val();
+                $("div.texto").hide();
+                $("#show" + demovalue).show();
+            });
+        });
+    </script>
+
+</body>

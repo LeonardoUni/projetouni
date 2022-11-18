@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financeiro</title>
+    <script type="text/javascript" src="jquery-3.6.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: 0px;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .container {
+        background: linear-gradient(45deg, #0F6684, #172A3A);
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 20px;
+        justify-content: center;
+        display: flexbox;
+        font-size: 30pt;
+        font-weight: bold;
+    }
+
+    .finan1 {
+        float: left;
+        padding: 10px;
+        margin-top: 20px;
+        margin-left: 20px;
+        width: 400px;
+        height: 335px;
+        margin-bottom: 20px;
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 3px;
+        padding: 10px;
+        line-height: 35px;
+        background: rgb(0, 0, 68);
+        color: white;
+    }
+
+    .finan1:hover {
+        background-color: white;
+        color: black;
+        box-shadow: 2px 10px 15px black;
+        transition: 0.5s;
+        text-anchor: black;
+        cursor: pointer;
+    }
+</style>
+
+<header>
+    <div class="container">
+        <p id="titulo">Financeiro</p>
+    </div>
+</header>
+
+<body>
+    <div class="finan1">
+        <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">REESTRUTURAÇÃO DO DEPARTAMENTO
+            FINANCEIRO</p>
+        <p> <b>PRAZO ESTIMADO</b>: T1 </p>
+        <p> <b>PRAZO ATUAL</b>: T4 </p>
+        <p> <b>ALTERAÇÕES DE PRAZO</b>: 3 </p>
+        <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora"
+                href="https://consorciounifisa.bitrix24.com.br/company/personal/user/547/tasks/task/view/22887/">
+                Clique aqui</a></p>
+        <p> <b>STATUS</b>: EM ANDAMENTO </p>
+        <p> <b>ESTRATÉGICO</b>: NÃO </p>
+    </div>
+
+    <div class="finan1">
+        <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">OPERADOR DE CARTÃO</p>
+        <p> <b>PRAZO ESTIMADO</b>: T2 </p>
+        <p> <b>PRAZO ATUAL</b>: T4 </p>
+        <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
+        <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora"
+                href="https://consorciounifisa.bitrix24.com.br/company/personal/user/547/tasks/task/view/22555/">
+                Clique aqui</a></p>
+        <p> <b>STATUS</b>: EM ANDAMENTO </p>
+        <p> <b>ESTRATÉGICO</b>: NÃO </p>
+    </div>
+
+    <div class="finan1">
+        <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">DETALHAMENTO DE PROCESSO PARA RPA</p>
+        <p> <b>PRAZO ESTIMADO</b>: T2 </p>
+        <p> <b>PRAZO ATUAL</b>: T4 </p>
+        <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
+        <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora"
+                href="https://consorciounifisa.bitrix24.com.br/company/personal/user/547/tasks/task/view/4162/">
+                Clique aqui</a></p>
+        <p> <b>STATUS</b>: EM ANDAMENTO </p>
+        <p> <b>ESTRATÉGICO</b>: NÃO </p>
+    </div>
+
+    <div class="finan1">
+        <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">SISTEMA DE CONTROLE DE REEMBOLSO</p>
+        <p> <b>PRAZO ESTIMADO</b>: T2 </p>
+        <p> <b>PRAZO ATUAL</b>: T4 </p>
+        <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
+        <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora"
+                href="https://consorciounifisa.bitrix24.com.br/company/personal/user/547/tasks/task/view/22893/">
+                Clique aqui</a></p>
+        <p> <b>STATUS</b>: EM ANDAMENTO </p>
+        <p> <b>ESTRATÉGICO</b>: NÃO </p>
+    </div>
+
+    <div class="finan1">
+        <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">CONFIGURAR COBRANÇA "CORREIO /
+            E-MAIL"</p>
+        <p> <b>PRAZO ESTIMADO</b>: T2 </p>
+        <p> <b>PRAZO ATUAL</b>: T4 </p>
+        <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
+        <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora"
+                href="https://consorciounifisa.bitrix24.com.br/company/personal/user/547/tasks/task/view/22893/">
+                Clique aqui</a></p>
+        <p> <b>STATUS</b>: EM ANDAMENTO </p>
+        <p> <b>ESTRATÉGICO</b>: SIM </p>
+    </div>
+
+    <div class="finan1">
+        <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">MELHOR TRATAMENTO PARA OCORRENCIAS NA
+            BAIXA DO RETORNO ELETRÔNICO</p>
+        <p> <b>PRAZO ESTIMADO</b>: T2 </p>
+        <p> <b>PRAZO ATUAL</b>: T4 </p>
+        <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
+        <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora"
+                href="https://consorciounifisa.bitrix24.com.br/company/personal/user/547/tasks/task/view/22897/">
+                Clique aqui</a></p>
+        <p> <b>STATUS</b>: EM ANDAMENTO </p>
+        <p> <b>ESTRATÉGICO</b>: SIM </p>
+    </div>
+    
+</body>

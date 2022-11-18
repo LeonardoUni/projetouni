@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+    font-family: "Poppins", sans-serif;
+
+}
+
+:root {
+    --select-border: rgb(0, 0, 0);
+    --select-focus: rgb(68, 128, 218);
+    --select-arrow: var(--select-border);
+}
+
+.container {
+    background: linear-gradient(45deg, #0F6684, #172A3A);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+    justify-content: center;
+    display: flexbox;
+    font-size: 30pt;
+    font-weight: bold;
+}
+
+.container2 {
+    text-align: center;
+    padding: 20px;
+}
+
+select {
+    width: 300px;
+    min-width: 15ch;
+    max-width: 30ch;
+    border: 1px solid var(--select-border);
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+    font-size: 1.25rem;
+    cursor: pointer;
+    line-height: 1.1;
+    background-color: rgb(255, 255, 255);
+}
+
+select:-ms-expand {
+    display: none;
+}
+
+.select::after {
+    content: "";
+    width: 0.8em;
+    height: 0.5em;
+    background-color: var(--select-arrow);
+    clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+}
+
+.texto{
+    display: none;
+}
+
+/* ----------------------- Tarefa 1 - Administração de Grupos ------------------------------------------------------------------*/
+
+.texto #adm1{
+    float: left;
+    padding: 10px;
+    margin-left: 20px;
+    width: 400px;
+    height: 335px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    padding: 10px;
+    line-height: 35px;
+    background: rgb(0, 0, 68);
+    color: white;
+}
+
+.texto #adm1:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 2px 10px 15px black;
+    transition: 0.5s;
+    text-anchor: black;
+    cursor: pointer;
+}
+
+/* ----------------------- Tarefa 2 - Atendimento ao Cliente ------------------------------------------*/
+
+.texto #atd1{
+    float: left;
+    padding: 10px;
+    margin-left: 20px;
+    width: 400px;
+    height: 335px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    padding: 10px;
+    line-height: 35px;
+    background: rgb(0, 0, 68);
+    color: white;
+}
+
+.texto #atd1:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 2px 10px 15px black;
+    transition: 0.5s;
+    text-anchor: black; 
+    cursor: pointer;
+}
+
+/* ----------------------- Tarefa 03 - Cobrança ------------------------------------------*/
+
+.texto #cbr1{
+    float: left;
+    padding: 10px;
+    margin-left: 20px;
+    width: 400px;
+    height: 335px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    padding: 10px;
+    line-height: 35px;
+    background: rgb(0, 0, 68);
+    color: white;
+}
+
+.texto #cbr1:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 2px 10px 15px black;
+    transition: 0.5s;
+    text-anchor: black; 
+    cursor: pointer; 
+}
+
+/* ----------------------- Tarefa 04 - Contabilidade -----------------------------------------------------*/
+
+.texto #conta1{
+    float: left;
+    padding: 10px;
+    margin-left: 20px;
+    width: 400px;
+    height: 335px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    padding: 10px;
+    line-height: 35px;
+    background: rgb(0, 0, 68);
+    color: white;
+}
+
+.texto #conta1:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 2px 10px 15px black;
+    transition: 0.5s;
+    text-anchor: black;
+    cursor: pointer;
+}
+
+/* ----------------------- Tarefa 05 - Controladoria -----------------------------------------------------*/
+
+.texto #control1{
+    float: left;
+    padding: 10px;
+    margin-left: 20px;
+    width: 400px;
+    height: 335px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    padding: 10px;
+    line-height: 35px;
+    background: rgb(0, 0, 68);
+    color: white;
+}
+
+.texto #control1:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 2px 10px 15px black;
+    transition: 0.5s;
+    text-anchor: black;
+    cursor: pointer;
+}
+
+/* ----------------------- Tarefa 06 - Crédito Bens-Móveis e Serviços --------------------------------------*/
+
+.texto #creditobens1{
+    float: left;
+    padding: 10px;
+    margin-left: 20px;
+    width: 400px;
+    height: 335px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    padding: 10px;
+    line-height: 35px;
+    background: rgb(0, 0, 68);
+    color: white;
+}
+
+.texto #creditobens1:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 2px 10px 15px black;
+    transition: 0.5s;
+    text-anchor: black;
+    cursor: pointer;
+}
+
+/* ----------------------- Tarefa 07 - Crédito - Imóveis ------------------------------------------*/
+
+.texto #creditoimovel1{
+    float: left;
+    padding: 10px;
+    margin-left: 20px;
+    width: 400px;
+    height: 335px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    padding: 10px;
+    line-height: 35px;
+    background: rgb(0, 0, 68);
+    color: white;
+}
+
+.texto #creditoimovel1:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 2px 10px 15px black;
+    transition: 0.5s;
+    text-anchor: black;
+    cursor: pointer;
+}
+
+/* ----------------------- Tarefa 08 - Facilities ------------------------------------------*/
+
+.texto #facil1{
+    float: left;
+    padding: 10px;
+    margin-left: 20px;
+    width: 400px;
+    height: 335px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    padding: 10px;
+    line-height: 35px;
+    background: rgb(0, 0, 68);
+    color: white;
+}
+
+.texto #facil1:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 2px 10px 15px black;
+    transition: 0.5s;
+    text-anchor: black;
+    cursor: pointer;
+}
+
+/* ----------------------- Tarefa 09 - Financeiro ------------------------------------------*/
+
+.texto #finan1{
+    float: left;
+    padding: 10px;
+    margin-left: 20px;
+    width: 400px;
+    height: 335px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    padding: 10px;
+    line-height: 35px;
+    background: rgb(0, 0, 68);
+    color: white;
+}
+
+.texto #finan1:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 2px 10px 15px black;
+    transition: 0.5s;
+    text-anchor: black;
+    cursor: pointer;
+}
+
+/* ----------------------- Tarefa 10 - Jurídico ------------------------------------------*/
+
+.texto #juri1{
+    float: left;
+    padding: 10px;
+    margin-left: 20px;
+    width: 400px;
+    height: 360px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    padding: 10px;
+    line-height: 35px;
+    background: rgb(0, 0, 68);
+    color: white;
+}
+
+.texto #juri1:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 2px 10px 15px black;
+    transition: 0.5s;
+    text-anchor: black;
+    cursor: pointer;
+}
+
+/* ----------------------- Tarefa 11 - Monitoria e Treinamento ------------------------------------------*/
+
+.texto #monitoria{
+    float: left;
+    padding: 10px;
+    margin-left: 20px;
+    width: 400px;
+    height: 275px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    padding: 10px;
+    line-height: 35px;
+    background: rgb(0, 0, 68);
+    color: white;
+}
+
+.texto #monitoria:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 2px 10px 15px black;
+    transition: 0.5s;
+    text-anchor: black;
+    cursor: pointer;
+}
+
+/* ----------------------- Tarefa 12 - Ouvidoria ------------------------------------------*/
+
+.texto #ouv1{
+    float: left;
+    padding: 10px;
+    margin-left: 20px;
+    width: 400px;
+    height: 315px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    padding: 10px;
+    line-height: 35px;
+    background: rgb(0, 0, 68);
+    color: white;
+}
+
+.texto #ouv1:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 2px 10px 15px black;
+    transition: 0.5s;
+    text-anchor: black; 
+    cursor: pointer; 
+}
+
+/* ----------------------- Tarefa 13 - Reativação ------------------------------------*/
+
+.texto #reat1{
+    float: left;
+    padding: 10px;
+    margin-left: 20px;
+    width: 400px;
+    height: 315px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    padding: 10px;
+    line-height: 35px;
+    background: rgb(0, 0, 68);
+    color: white;
+}
+
+.texto #reat1:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 2px 10px 15px black;
+    transition: 0.5s;
+    text-anchor: black;
+    cursor: pointer;
+}
+
+/* ----------------------- Tarefa 14 - Recompra ------------------------------------*/
+
+.texto #rec1{
+    float: left;
+    padding: 10px;
+    margin-left: 20px;
+    width: 400px;
+    height: 335px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    padding: 10px;
+    line-height: 35px;
+    background: rgb(0, 0, 68);
+    color: white;
+}
+
+.texto #rec1:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 2px 10px 15px black;
+    transition: 0.5s;
+    text-anchor: black; 
+    cursor: pointer;   
+}
+
+/* ----------------------- Tarefa 15 - Recursos Humanos ------------------------------------*/
+
+.texto #rh1{
+    float: left;
+    padding: 10px;
+    margin-left: 20px;
+    width: 400px;
+    height: 405px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    padding: 10px;
+    line-height: 35px;
+    background: rgb(0, 0, 68);
+    color: white;
+}
+
+.texto #rh1:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 2px 10px 15px black;
+    transition: 0.5s;
+    text-anchor: black;   
+    cursor: pointer; 
+}
+
+/* ----------------------- Tarefa 16 - Sucesso do Cliente ------------------------------------*/
+
+.texto #suce1{
+    float: left;
+    padding: 10px;
+    margin-left: 20px;
+    width: 400px;
+    height: 375px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    padding: 10px;
+    line-height: 35px;
+    background: rgb(0, 0, 68);
+    color: white;
+}
+
+.texto #suce1:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 2px 10px 15px black;
+    transition: 0.5s;
+    text-anchor: black;   
+    cursor: pointer; 
+}
+
+/* ----------------------- Tarefa 17 - Tecnologia da Informação ------------------------------------*/
+
+.texto #ti1{
+    float: left;
+    padding: 10px;
+    margin-left: 20px;
+    width: 400px;
+    height: 375px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    padding: 10px;
+    line-height: 35px;
+    background: rgb(0, 0, 68);
+    color: white;
+}
+
+.texto #ti1:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 2px 10px 15px black;
+    transition: 0.5s;
+    text-anchor: black;   
+    cursor: pointer; 
+}

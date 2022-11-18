@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crédito</title>
+    <script type="text/javascript" src="jquery-3.6.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+    font-family: "Poppins", sans-serif;
+
+}
+
+:root {
+    --select-border: rgb(0, 0, 0);
+    --select-focus: rgb(68, 128, 218);
+    --select-arrow: var(--select-border);
+}
+
+.container {
+    background: linear-gradient(45deg, #0F6684, #172A3A);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+    justify-content: center;
+    display: flexbox;
+    font-size: 30pt;
+    font-weight: bold;
+}
+
+.container2 {
+    text-align: center;
+    padding: 20px;
+}
+
+select {
+    width: 300px;
+    min-width: 15ch;
+    max-width: 30ch;
+    border: 1px solid var(--select-border);
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+    font-size: 1.25rem;
+    cursor: pointer;
+    line-height: 1.1;
+    background-color: rgb(255, 255, 255);
+}
+
+select:-ms-expand {
+    display: none;
+}
+
+.select::after {
+    content: "";
+    width: 0.8em;
+    height: 0.5em;
+    background-color: var(--select-arrow);
+    clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+}
+
+.texto{
+    display: none;
+}
+
+.texto .creditobens1{
+    float: left;
+    padding: 10px;
+    margin-left: 20px;
+    width: 400px;
+    height: 335px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    padding: 10px;
+    line-height: 35px;
+    background: rgb(0, 0, 68);
+    color: white;
+}
+
+.texto .creditobens1:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 2px 10px 15px black;
+    transition: 0.5s;
+    text-anchor: black;
+    cursor: pointer;
+}
+
+.texto .creditoimovel1{
+    float: left;
+    padding: 10px;
+    margin-left: 20px;
+    width: 400px;
+    height: 335px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    padding: 10px;
+    line-height: 35px;
+    background: rgb(0, 0, 68);
+    color: white;
+}
+
+.texto .creditoimovel1:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 2px 10px 15px black;
+    transition: 0.5s;
+    text-anchor: black;
+    cursor: pointer;
+}
+</style>
+
+<header>
+    <div class="container">
+        <p id="titulo">Crédito</p>
+    </div>
+</header>
+
+<body>
+    <div class="container2">
+        <select id="myselection">
+            <div class="select-items">
+                <option>Selecione um Departamento</option>
+                <option value="1">Crédito Bens Móveis e Serviços</option>
+                <option value="2">Crédito Imóveis</option>
+            </div>
+        </select>
+    </div>
+
+    <div id="show1" class="texto">
+        <div class="creditobens1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">TRANSFERÊNCIA DE COTA COM BEM
+                ENTREGUE</p>
+            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
+            <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/615/tasks/task/view/25897/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: EM ANDAMENTO </p>
+            <p> <b>ESTRATÉGICO</b>: AGUARDANDO POSICIONAMENTO </p>
+        </div>
+
+        <div class="creditobens1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">CONTRATAR EMPRESA PARA GESTÃO E
+                PROCESSO DE CREDENCIAMENTO ANUAL NOS DETRANS </p>
+            <p> <b>PRAZO ESTIMADO</b>: T1 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 3 </p>
+            <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/615/tasks/task/view/22437/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: EM ANDAMENTO </p>
+            <p> <b>ESTRATÉGICO</b>: AGUARDANDO POSICIONAMENTO </p>
+        </div>
+
+        <div class="creditobens1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">BAIXA DE GRAVAME AUTOMÁTICA APÓS
+                QUITAÇÃO DA COTA </p>
+            <p> <b>PRAZO ESTIMADO</b>: T3 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 1 </p>
+            <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/29671/tasks/task/view/25921/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: EM ANDAMENTO </p>
+            <p> <b>ESTRATÉGICO</b>: AGUARDANDO POSICIONAMENTO </p>
+        </div>
+
+        <div class="creditobens1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">PROJ - CRIAÇÃO DA POLÍTICA DE
+                CRÉDITO
+            </p>
+            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
+            <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/615/tasks/task/view/25923/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: SOMENTE CADASTRADA </p>
+            <p> <b>ESTRATÉGICO</b>: AGUARDANDO POSICIONAMENTO </p>
+        </div>
+
+        <div class="creditobens1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">MAPA DE SINISTRO (BITRIX) </p>
+            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
+            <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/615/tasks/task/view/22439/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: POUCA EVOLUÇÃO </p>
+            <p> <b>ESTRATÉGICO</b>: AGUARDANDO POSICIONAMENTO </p>
+        </div>
+
+        <div class="creditobens1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">REVISÃO DOS DOCUMENTOS DA FASE
+                "ANÁLISE DE CRÉDITO 103" </p>
+            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
+            <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/615/tasks/task/view/25911/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: POUCA EVOLUÇÃO </p>
+            <p> <b>ESTRATÉGICO</b>: AGUARDANDO POSICIONAMENTO </p>
+        </div>
+
+        <div class="creditobens1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">PAINEL DE DECISÃO DO CRÉDITO </p>
+            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
+            <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/615/tasks/task/view/25913/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: SOMENTE CADASTRADA </p>
+            <p> <b>ESTRATÉGICO</b>: SIM </p>
+        </div>
+
+        <div class="creditobens1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">CRIAÇÃO DE CONTROLES E MÉTRICAS
+            </p>
+            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
+            <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/615/tasks/task/view/25917/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: SOMENTE CADASTRADA </p>
+            <p> <b>ESTRATÉGICO</b>: SIM </p>
+        </div>
+
+        <div class="creditobens1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">TAR - 1052 - CONTRATO DE
+                ALIENAÇÃO
+                VINCULADO </p>
+            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
+            <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/615/tasks/task/view/25917/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: PAUSADA </p>
+            <p> <b>ESTRATÉGICO</b>: NÃO </p>
+        </div>
+
+        <div class="creditobens1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">INFORMAR STATUS DO PROCESSO
+                CONTEMPLADO </p>
+            <p> <b>PRAZO ESTIMADO</b>: AGUARDANDO POSICIONAMENTO </p>
+            <p> <b>PRAZO ATUAL</b>: AGUARDANDO POSICIONAMENTO </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 0 </p>
+            <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/workgroups/group/313/tasks/task/view/24633/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: SOMENTE CADASTRADA </p>
+            <p> <b>ESTRATÉGICO</b>: AGUARDANDO POSICIONAMENTO </p>
+        </div>
+
+        <div class="creditobens1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">LANÇAR NA AGENDA NEWCON TICKETS
+                MOVIDESK </p>
+            <p> <b>PRAZO ESTIMADO</b>: T4 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 0 </p>
+            <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/workgroups/group/313/tasks/task/view/24549/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: SOMENTE CADASTRADA </p>
+            <p> <b>ESTRATÉGICO</b>: AGUARDANDO POSICIONAMENTO </p>
+        </div>
+
+        <div class="creditobens1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">SISTEMA/AUTOMAÇÃO - RECEBIMENTO
+                DE
+                DOCUMENTOS DE CADASTRO </p>
+            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
+            <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/615/tasks/task/view/25927/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: SOMENTE CADASTRADA </p>
+            <p> <b>ESTRATÉGICO</b>: SIM </p>
+        </div>
+
+        <div class="creditobens1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">DISPONIBILIZAÇÃO DOS COMPROVANTES
+                DE
+                PAGAMENTO </p>
+            <p> <b>PRAZO ESTIMADO</b>: T3 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 1 </p>
+            <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/621/tasks/task/view/26123/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: SOMENTE CADASTRADA </p>
+            <p> <b>ESTRATÉGICO</b>: AGUARDANDO POSICIONAMENTO </p>
+        </div>
+
+        <div class="creditobens1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">MENSAGEM AUTOMÁTICA OFERECENDO LB
+                (LIBERAÇÃO DE CRÉDITO) </p>
+            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
+            <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/621/tasks/task/view/26103/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: POUCA EVOLUÇÃO </p>
+            <p> <b>ESTRATÉGICO</b>: NÃO </p>
+        </div>
+
+        <div class="creditobens1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">PIPELINE NO BITRIX PÓS
+                CONTEMPLAÇÃO
+            </p>
+            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
+            <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/29671/tasks/task/view/26105/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: SOMENTE CADASTRADA </p>
+            <p> <b>ESTRATÉGICO</b>: SIM </p>
+        </div>
+
+        <div class="creditobens1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">PROJ - 1087 - ANÁLISE DE CRÉDITO
+                AUTOMÁTICO - MOTOR DE DECISÃO NEUROTECH </p>
+            <p> <b>PRAZO ESTIMADO</b>: T3 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 1 </p>
+            <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/615/tasks/task/view/4532/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: POUCA EVOLUÇÃO </p>
+            <p> <b>ESTRATÉGICO</b>: AGUARDANDO POSICIONAMENTO </p>
+        </div>
+
+        <div class="creditobens1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">CARSYS: IMPLANTAÇÃO </p>
+            <p> <b>PRAZO ESTIMADO</b>: T3 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 1 </p>
+            <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/621/tasks/task/view/4258/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: PAUSADA </p>
+            <p> <b>ESTRATÉGICO</b>: AGUARDANDO POSICIONAMENTO </p>
+        </div>
+
+        <div class="creditobens1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">MÉTRICAS CRÉDITO </p>
+            <p> <b>PRAZO ESTIMADO</b>: T3 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 1 </p>
+            <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/29671/tasks/task/view/26089/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: SOMENTE CADASTRADA </p>
+            <p> <b>ESTRATÉGICO</b>: AGUARDANDO POSICIONAMENTO </p>
+        </div>
+
+        <div class="creditobens1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">DISPARO DE ALERTA PARA O CLIENTE
+            </p>
+            <p> <b>PRAZO ESTIMADO</b>: T3 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 1 </p>
+            <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/621/tasks/task/view/26117/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: SOMENTE CADASTRADA </p>
+            <p> <b>ESTRATÉGICO</b>: AGUARDANDO POSICIONAMENTO </p>
+        </div>
+    </div>
+
+    <div id="show2" class="texto">
+        <div class="creditoimovel1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">CONTROLE DE MAPAS (PROCESSOS QUE
+                NÃO FECHAM A FASE DE AGUARDANDO DOCS)</p>
+            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
+            <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/635/tasks/task/view/21903/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: EM ANDAMENTO </p>
+            <p> <b>ESTRATÉGICO</b>: NÃO </p>
+        </div>
+
+        <div class="creditoimovel1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">MIMO PARA O CLIENTE</p>
+            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 1 </p>
+            <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/635/tasks/task/view/19659/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: EM ANDAMENTO </p>
+            <p> <b>ESTRATÉGICO</b>: NÃO </p>
+        </div>
+
+        <div class="creditoimovel1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">PESQUISA DE SATISFAÇÃO</p>
+            <p> <b>PRAZO ESTIMADO</b>: T3 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 1 </p>
+            <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/635/tasks/task/view/21871/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: EM ANDAMENTO </p>
+            <p> <b>ESTRATÉGICO</b>: NÃO </p>
+        </div>
+
+        <div class="creditoimovel1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">ENTRADA NO RI VIA DIGITAL PARA
+                PROCESSO FÍSICOS</p>
+            <p> <b>PRAZO ESTIMADO</b>: T3 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 1 </p>
+            <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/635/tasks/task/view/21909/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: EM ANDAMENTO </p>
+            <p> <b>ESTRATÉGICO</b>: NÃO </p>
+        </div>
+
+        <div class="creditoimovel1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">GUIA DE TRANSFERÊNCIA</p>
+            <p> <b>PRAZO ESTIMADO</b>: T3 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 1 </p>
+            <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/635/tasks/task/view/21921/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: EM ANDAMENTO </p>
+            <p> <b>ESTRATÉGICO</b>: NÃO </p>
+        </div>
+
+        <div class="creditoimovel1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">CONFIRMAÇÃO E COBERTURA DE LANCE
+                -
+                AUTOMATIZADO</p>
+            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
+            <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/635/tasks/task/view/12637/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: EM ANDAMENTO </p>
+            <p> <b>ESTRATÉGICO</b>: SIM </p>
+        </div>
+
+        <div class="creditoimovel1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">MÉTRICAS NO SETOR DE IMÓVEL </p>
+            <p> <b>PRAZO ESTIMADO</b>: T2 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 1 </p>
+            <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/635/tasks/task/view/21935/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: SOMENTE CADASTRADA </p>
+            <p> <b>ESTRATÉGICO</b>: SIM </p>
+        </div>
+
+        <div class="creditoimovel1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">WORKFLOW - CRÉDITO BENS DIVERSOS
+            </p>
+            <p> <b>PRAZO ESTIMADO</b>: T1 </p>
+            <p> <b>PRAZO ATUAL</b>: T4 </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 2 </p>
+            <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/635/tasks/task/view/10314/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: PAUSADA </p>
+            <p> <b>ESTRATÉGICO</b>: NÃO </p>
+        </div>
+
+        <div class="creditoimovel1">
+            <p style="text-align:center; font-weight:bold; padding-bottom: 20px ;">DEFINIR PILARES DO SETOR -
+                CRÉDITO
+                IMÓVEL </p>
+            <p> <b>PRAZO ESTIMADO</b>: AGUARDANDO POSICIONAMENTO </p>
+            <p> <b>PRAZO ATUAL</b>: AGUARDANDO POSICIONAMENTO </p>
+            <p> <b>ALTERAÇÕES DE PRAZO</b>: 0 </p>
+            <p> <b>LINK DO BITRIX</b>:<a style="color: black;" id="ancora"
+                    href="https://consorciounifisa.bitrix24.com.br/company/personal/user/635/tasks/task/view/22067/">
+                    Clique aqui</a></p>
+            <p> <b>STATUS</b>: SOMENTE CADASTRADA </p>
+            <p> <b>ESTRATÉGICO</b>: NÃO </p>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('#myselection').on('change', function () {
+                var demovalue = $(this).val();
+                $("div.texto").hide();
+                $("#show" + demovalue).show();
+            });
+        });
+    </script>
+
+</body>

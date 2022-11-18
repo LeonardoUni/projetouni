@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1ab94d0eba.js" crossorigin="anonymous"></script>
+    <title>Área de Login</title>
+    <link rel="stylesheet" href="estilologin.css">
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(45deg, #0F6684, #172A3A);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main.container {
+    background: white;
+    min-width: 320px;
+    min-height: 40vh;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    position: absolute;
+    margin-top: 15px;
+}
+
+main h2 {
+    font-weight: 600;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field {
+    position: relative;
+}
+
+form .input-field:first-child {
+    margin-bottom: 1.5rem;
+}
+
+.input-field .underline::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.input-field .underline::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(45deg, #0F6684, #172A3A);
+    transform: scaleX(0);
+    transition: all .3s ease-in-out;
+    transform-origin: left;
+}
+
+.input-field input:focus ~ .underline::after {
+    transform: scaleX(1);
+}
+
+.input-field input {
+    outline: none;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+}
+
+.input-field input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+form input[type="button"] {
+    margin-top: 2rem;
+    padding: 0.4rem;
+    width: 100%;
+    background: linear-gradient(to left, #0F6684, #172A3A);
+    cursor: pointer;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 300;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    letter-spacing: 0.5px;
+    background: linear-gradient(to right, #0F6684, #172A3A);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.footer span {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.footer .social-field {
+    padding: 0.4rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.footer .social-field a i {
+    margin: 0 0.5rem;
+    width: 15px;
+}
+
+.logo img{
+    position: relative;
+    margin-bottom: 440px;
+    margin-left: 10px;
+    margin-top: 25px;
+}
+    </style>
+
+</head>
+
+<body>
+    <div class="logo">
+        <img src="unifisawhite.jpg" alt="logounifisa" width="200" height="140"/>
+    </div>
+    <main class="container">
+        <h2>Planejamento Estratégico 2022</h2>
+        <form action="" class="input-field">
+            <div class="input-field">
+            <input type="text" placeholder="Departamento" id="login">
+            <div class="underline"></div>
+            </div>
+        </form>
+            
+        <form action="" class="input-field">
+            <div class="input-field">
+            <input type="password" placeholder="Senha" id="senha">
+            <div class="underline"></div>
+            </div>
+        </form>
+
+        <form action="" class="input-field">
+        <input type="button" value="Continue" type="submit" onclick="logar(); return false">
+        </form>
+    </main>
+
+    <script>
+        function logar(){
+
+            var login = document.getElementById('login').value;
+            var senha = document.getElementById('senha').value;
+
+            if(login == "Adm de Grupos" && senha == "adm123"){
+                alert('Bem Vindo!');
+                location.href = "adm.html";
+
+            }
+
+            if(login == "Atd ao Cliente" && senha == "atd123"){
+                alert('Bem Vindo!');
+                location.href = "atdcliente.html";
+
+            }
+
+            if(login == "Cobrança e Reativação" && senha == "cbrt123"){
+                alert('Bem Vindo!');
+                location.href = "cobreat.html";
+
+            }
+
+            if(login == "Contabilidade" && senha == "conta123"){
+                alert('Bem Vindo!');
+                location.href = "contabilidade.html";
+
+            }
+
+            if(login == "Controladoria" && senha == "control123"){
+                alert('Bem Vindo!');
+                location.href = "controladoria.html";
+
+            }
+
+            if(login == "Facilities" && senha == "facil123"){
+                alert('Bem Vindo!');
+                location.href = "facilities.html";
+
+            }
+
+            if(login == "Financeiro" && senha == "finan123"){
+                alert('Bem Vindo!');
+                location.href = "financeiro.html";
+
+            }
+
+            if(login == "Crédito" && senha == "credito123"){
+                alert('Bem Vindo!');
+                location.href = "créditos.html";
+
+            }
+
+            if(login == "Jurídico" && senha == "juri123"){
+                alert('Bem Vindo!');
+                location.href = "juridico.html";
+
+            }
+
+            if(login == "Monitoria" && senha == "moni123"){
+                alert('Bem Vindo!');
+                location.href = "monitoria.html";
+
+            }
+
+            if(login == "Ouvidoria" && senha == "ouvi123"){
+                alert('Bem Vindo!');
+                location.href = "ouvidoria.html";
+
+            }
+
+            if(login == "Recompra" && senha == "rec123"){
+                alert('Bem Vindo!');
+                location.href = "recompra.html";
+
+            }
+
+            if(login == "Recursos" && senha == "rh123"){
+                alert('Bem Vindo!');
+                location.href = "rh.html";
+
+            }
+
+            if(login == "Sucesso" && senha == "sucesso123"){
+                alert('Bem Vindo!');
+                location.href = "sucesso.html";
+
+            }
+
+            if(login == "Tecnologia" && senha == "ti123"){
+                alert('Bem Vindo!');
+                location.href = "ti.html";
+
+            }
+
+            if(login == "Projetos" && senha == "admin123"){
+                alert('Bem Vindo!');
+                location.href = "departamentos.html";
+
+            }
+    
+            else{
+                alert('Departamento ou Senha incorretos!');
+            }        
+        }
+    </script>
+
+</body>
+</html>
